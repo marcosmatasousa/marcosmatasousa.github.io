@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/musicpage.css">
+    <title>grayera - Safe Indoors</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../static/safeindoors_cover.jpg" alt="Safe Indoors">
+            <div class="type">Album</div>
+            <div class="title">
+                <h1>Safe Indoors</h1>
+            </div>
+            <div class="artist" style="margin-left: 40px;">
+                <a href="#">grayera</a>&nbsp; • &nbsp; 2021 &nbsp; • &nbsp; 7 songs 
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="music_list">
+        <ul id="playlist">
+            <li onclick="clickOnTitle('Safe Indoors')">Safe Indoors</li>
+            <li onclick="clickOnTitle('No Such Thing As Permanent')">No Such Thing As Permanent</li>
+            <li onclick="clickOnTitle('Blankets Over Head')">Blankets Over Head</li>
+            <li onclick="clickOnTitle('Hallowed Ground')">Hallowed Ground</li>
+            <li onclick="clickOnTitle('Cabin Aflame')">Cabin Aflame</li>
+            <li onclick="clickOnTitle('Anywhere You Go')">Anywhere You Go</li>
+            <li onclick="clickOnTitle('Think Ill Just Sleep')">Think Ill Just Sleep</li>
+        </ul>
+    </div>
+    <hr>
+
+    <footer style="height: 250px;">
+        <div class="footer">More of grayera
+            <div>
+                <a target="_blank" href="https://open.spotify.com/intl-pt/artist/12rytXZonlKWOQGS14woPL"><img class="stream" src="../static/spotify.png" alt=""></a>
+                <a target="_blank" href="https://soundcloud.com/grayera"><img class="stream" src="../static/soundcloud.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="player">
+        <div class="buttons">
+            <button onclick="backward()"><img style="padding-bottom: 8px;" src="../static/backward.png" alt=""></button>
+            <button onclick="playPauseButton()"><img style="margin-bottom: 35px;" id="play-pause" alt=""></button>
+            <button onclick="forward()"><img style="padding-bottom: 8px;" src="../static/forward.png" alt=""></button>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" controls>
+        <source src="" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

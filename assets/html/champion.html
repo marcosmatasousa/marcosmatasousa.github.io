@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/musicpage.css">
+    <title>BONES - Champion</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../static/champion_cover.jpg" alt="Champion">
+            <div class="type">Album</div>
+            <div class="title">
+                <h1>Champion</h1>
+            </div>
+            <div class="artist" style="margin-left: 40px;">
+                <a href="#">BONES</a>&nbsp; • &nbsp; 2024 &nbsp; • &nbsp; 8 songs 
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="music_list">
+        <ul id="playlist">
+            <li onclick="clickOnTitle('HomeForTheHolidays')">HomeForTheHolidays</li>
+            <li onclick="clickOnTitle('WishICouldHaveHelpedYou')">WishICouldHaveHelpedYou</li>
+            <li onclick="clickOnTitle('NumberOneFan')">NumberOneFan</li>
+            <li onclick="clickOnTitle('IBelieveYou,ButMyGlock19Dont')">IBelieveYou,ButMyGlock19Dont</li>
+            <li onclick="clickOnTitle('Trampoline')">Trampoline</li>
+            <li onclick="clickOnTitle('DefendingYourLife')">DefendingYourLife</li>
+            <li onclick="clickOnTitle('10ThingsIHateAboutYou')">10ThingsIHateAboutYou</li>
+            <li onclick="clickOnTitle('Brighton')">Brighton</li>
+        </ul>
+    </div>
+    <hr>
+
+    <li></li>
+
+    <footer style="height: 250px;">
+        <div class="footer">More of BONES
+            <div>
+                <a target="_blank" href="https://open.spotify.com/intl-pt/artist/5v2WhpA59TJSdPh7LCx1lN?si=icvGz-ZcSuC-y3HakwJiig"><img class="stream" src="static/spotify.png" alt=""></a>
+                <a target="_blank" href="https://soundcloud.com/teamsesh"><img class="stream" src="../static/soundcloud.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="player">
+        <div class="buttons">
+            <button onclick="backward()"><img style="padding-bottom: 8px;" src="../static/backward.png" alt=""></button>
+            <button onclick="playPauseButton()"><img style="margin-bottom: 35px;" id="play-pause"></button>
+            <button onclick="forward()"><img style="padding-bottom: 8px;" src="../static/forward.png" alt=""></button>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" controls>
+        <source src="" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+
+    <script src="../js/script.js">
+        
+    </script>
+</body>
+</html>
