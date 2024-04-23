@@ -1,6 +1,6 @@
 var audioPlayer = document.getElementById('audioPlayer');
 var playPause = document.getElementById('play-pause');
-playPause.src = "../static/play.png";
+playPause.src = "static/play.png";
 
 playlist = document.getElementById('playlist');
 currentSong = playlist.children[0].innerHTML;
@@ -9,15 +9,15 @@ currentSong = playlist.children[0].innerHTML;
 audioPlayer.addEventListener('ended', forward);
 
 audioPlayer.addEventListener('start', function(){
-    playPause.src = '../static/pause.png';
+    playPause.src = 'static/pause.png';
 })
 
 audioPlayer.addEventListener('ended', function(){
-    playPause.src = '../static/play.png';
+    playPause.src = 'static/play.png';
 })
 
 audioPlayer.addEventListener('pause', function(){
-    playPause.src = '../static/play.png';
+    playPause.src = 'static/play.png';
     console.log(`Song paused`);
 })
 
@@ -30,7 +30,7 @@ function playPauseButton(){
         audioPlayer.pause();
     }
     else if (audioPlayer.currentTime === 0){
-        playSong(`../static/${currentSong}.mp3`);
+        playSong(`static/${currentSong}.mp3`);
     }
     else{
         resume()
@@ -51,7 +51,7 @@ function forward(){
     for(var i = 0; i < itens.length; i++){
         if(itens[i].innerHTML === currentSong && i !== (itens.length - 1)){
             next = i + 1;
-            var musicSrc = `../static/${itens[next].innerHTML}.mp3`
+            var musicSrc = `static/${itens[next].innerHTML}.mp3`
             updateSong(itens[next].innerHTML);
             playSong(musicSrc);
             break;
@@ -70,7 +70,7 @@ function backward(){
         for(var i = 0; i < itens.length; i++){
             if(itens[i].innerHTML === currentSong && i !== 0){
                 next = i - 1;
-                var musicSrc = `../static/${itens[next].innerHTML}.mp3`;
+                var musicSrc = `static/${itens[next].innerHTML}.mp3`;
                 updateSong(itens[next].innerHTML);
                 playSong(musicSrc);
                 break;
@@ -78,13 +78,13 @@ function backward(){
         }
     }
     else{
-        var musicSrc = `../static/${currentSong}.mp3`
+        var musicSrc = `static/${currentSong}.mp3`
         playSong(musicSrc)
     }
 }
 
 function clickOnTitle(item){
-    var musicSrc = `../static/${item}.mp3`;
+    var musicSrc = `static/${item}.mp3`;
     updateSong(item)
     playSong(musicSrc);
 };
