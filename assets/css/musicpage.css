@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(18, 18, 18);
+    font-family: Karla;
+    font-style: bold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+h1{
+    color:white;
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 60px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 25px;
+    padding: 0;
+    color: rgb(177, 177, 177);
+    list-style-type:decimal;
+    align-content: left;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+
+img{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+img:hover{
+    transform: scale(1.02);
+}
+
+audio{
+    display: none;
+}
+
+div.container{
+    color: white;
+    background-image: linear-gradient(rgb(83, 83, 83), rgb(18, 18, 18));
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+div.footer{
+    padding-top: 30px;
+    padding-left: 80px;
+    color: white;
+}
+
+div.type{
+    margin-left: 40px;
+    margin-top: 40px;
+    display: inline-block;
+    color: white;
+}
+
+div.artist{
+    display: inline-block;
+    color: white;
+}
+
+div.info{
+    display: inline-block;
+    color: white;
+    margin-left: 6px;
+}
+
+header{
+    margin-bottom: 80px;
+}
+
+hr{
+    height: 1px;
+    background-color: #3b3737;
+    border: none;
+    opacity: 2;
+}
+
+div.music_list{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+img.stream{
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+div.player{
+    background-color: rgb(18, 18, 18);
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.buttons{
+    margin-left: 15px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    left: 50%;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}

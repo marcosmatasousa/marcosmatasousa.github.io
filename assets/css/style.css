@@ -1,0 +1,68 @@
+body {
+    font-family: 'Karla';
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    max-width: 600px;
+}
+
+footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/** Music page configs**/
+#music_page {
+    background-color: black;
+    color: white;
+}
+
+#playlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#playlist li {
+    cursor: pointer;
+}
+
+#audioPlayer {
+    display: none;
+    margin-bottom: 40px;
+}
+
+.center_div{
+    Display: flex;
+    align-items: flex-start;
+    text-align: justify;
+    flex-direction: column;
+    place-items: center;
+}
+
+.center_h2{
+    text-align: center;
+}
+
+.image_margin{
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+li{
+    margin-bottom:5px;
+    padding: 0;
+}

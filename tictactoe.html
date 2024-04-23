@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tictactoe.css">
+  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+  <title>Tic-Tac-Toe</title>
+</head>
+
+
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <div class="game">
+    <table border="" class="game">
+      <tr class="row">
+        <td><button id="[0, 0]" onclick="makePlay(0, 0)"></button></td>
+        <td><button id="[0, 1]" onclick="makePlay(0, 1)"></button></td>
+        <td><button id="[0, 2]" onclick="makePlay(0, 2)"></button></td>
+      </tr>
+      <tr class="row">
+        <td><button id="[1, 0]" onclick="makePlay(1, 0)"></button></td>
+        <td><button id="[1, 1]" onclick="makePlay(1, 1)"></button></td>
+        <td><button id="[1, 2]" onclick="makePlay(1, 2)"></button></td>
+      </tr>
+      <tr class="row">
+        <td><button id="[2, 0]" onclick="makePlay(2, 0)"></button></td>
+        <td><button id="[2, 1]" onclick="makePlay(2, 1)"></button></td>
+        <td><button id="[2, 2]" onclick="makePlay(2, 2)"></button></td>
+      </tr>
+    </table>
+  </div>
+  
+
+  <div class="scores">
+    <div id="X_score" class="score">
+      <img class="score_symbol" src="static/X_score.png" alt="">
+      <p id="X_score_number" class="X_score" style="float: right;"></p>
+    </div>
+    <div id="O_score" class="score">
+      <img class="score_symbol" src="static/O_score.png" alt="">
+      <p id="O_score_number" class="O_score" style="float: right;"></p>
+    </div>
+  </div>
+  
+  
+  
+  <script src="js/tictactoe.js"></script>
+</body>
+</html>

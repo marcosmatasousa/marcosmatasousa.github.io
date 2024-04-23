@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(rgb(83, 83, 83)1%, rgb(18, 18, 18) 90%);
+    font-family: Karla;
+}
+
+h1{
+    color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+p{
+    color: rgb(177, 177, 177);
+}
+
+a.music{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-bottom: 20px;
+    background: transparent;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+a.music:hover{
+    background: rgb(83, 83, 83);
+}
+
+div.row{
+    margin-left: 50px;
+    padding-bottom: 45%;
+
+}
+
+div.title{
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+div.year{
+    margin-top: 10px;
+    color: rgb(160, 157, 157);
+    margin-left: 3px;
+}
+
+p{
+    display: inline-block;
+}
+
