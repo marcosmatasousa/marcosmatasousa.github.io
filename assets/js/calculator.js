@@ -1,4 +1,4 @@
-display = document.getElementById("display");
+display = document.getElementById("result");
 
 function calculate(){
     result = eval(display.innerHTML);

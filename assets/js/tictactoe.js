@@ -13,7 +13,7 @@ function makePlay(x, y){
     if(table[x][y] === 0){
         table[x][y] = turn;
         var img = document.createElement("img"); 
-        img.src = `/static/${turn}_play.png`;
+        img.src = `../html/static_tictac/${turn}_play.png`;
         document.getElementById(`[${x}, ${y}]`).appendChild(img);
         validPlay = true;
     }

@@ -23,6 +23,11 @@ div.calculator{
     box-shadow: 15px, 15px, 15px white;
 }
 
+div.result{
+    text-align: center;
+    padding: 25px;
+}
+
 div.display{
     border-radius: 5px;
     background-color: white;
