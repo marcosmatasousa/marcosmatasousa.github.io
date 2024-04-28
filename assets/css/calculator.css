@@ -108,3 +108,9 @@ button.zero:hover{
     background-color: rgb(179,179,179);
 }
 
+@media only screen and (max-width: 400px){
+    div.calculator{
+        margin-top: 50px;
+    }
+}
+
