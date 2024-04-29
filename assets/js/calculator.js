@@ -1,8 +1,14 @@
 display = document.getElementById("result");
 
 function calculate(){
-    result = eval(display.innerHTML);
-    display.innerHTML = result;
+    try{
+        result = eval(display.innerHTML);
+        display.innerHTML = result;
+    }
+    catch(error){
+        display.innerHTML = 'Invalid Syntax'
+    }
+
 }
 
 function updateDisplay(item){
@@ -22,5 +28,10 @@ function C(){
 
 function CE(){
     // Deletes de last user entry
-    display.innerHTML = display.innerHTML.slice(0, -1);
+    if(display.innerHTML === 'Invalid Syntax'){
+        C();
+    }
+    else{
+        display.innerHTML = display.innerHTML.slice(0, -1);
+    }
 }
