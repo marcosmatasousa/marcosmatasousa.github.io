@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgb(83, 83, 83)1%, rgb(18, 18, 18) 90%);
+    background-image: linear-gradient(rgb(83, 83, 83), rgb(18, 18, 18));
     font-family: Karla;
 }
 

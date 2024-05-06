@@ -1,8 +1,8 @@
 body{
     background-image: linear-gradient(to bottom right, rgb(18, 18, 18), rgb(33,33,33), rgb(83, 83, 83));
-    padding-bottom: 50%;
     color: white;
     font-family: 'Karla';
+    height: 100vh;
 }
 
 h1{
